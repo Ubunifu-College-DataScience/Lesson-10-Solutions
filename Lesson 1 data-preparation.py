@@ -1,5 +1,9 @@
+
+# Use the Data.csv provided for which illustrates the ability of purchasing a product based on age, salary & country of origin.
+
+
 import numpy as np 
-import matplotlib.pyplot as mpt 
+#import matplotlib.pyplot as mpt 
 import pandas as pd
 import os  
 
@@ -21,7 +25,7 @@ print(y)
 #handling missing data (Replacing missing data with the mean value)
 imputer= SimpleImputer(missing_values =np.nan, strategy='mean')
 #Fitting imputer object to the independent variables x.   
-imputerimputer= imputer.fit(x[:, 1:3])  
+imputer= imputer.fit(x[:, 1:3])  
 #Replacing missing data with the calculated mean value  
 x[:, 1:3]= imputer.transform(x[:, 1:3])     
 
